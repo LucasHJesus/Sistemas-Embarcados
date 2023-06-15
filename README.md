@@ -1,7 +1,9 @@
 # PAINEL SOLAR SEGUIDOR DE SOL
 # (SUN TRACKING SOLAR PANEL)
 ## Projeto final da matéria de sistemas embarcados
+
 Lucas Humberto Jesus de Lima - 12011ECP011
+
 Bruno Pavan Ciriani da SIlva - 12011ECP012
 
 ## Objetivo
@@ -57,6 +59,6 @@ circuito.
   Resistores para medição da energia gerada: Divisor de tensão com o intuito de limitar o valor
 em 3.3V para que possa ser medido pelo microcontrolador.
 
-##Diagrama de blocos
+## Diagrama de blocos
 
 ![Diagrama PRJ1](https://github.com/LucasHJesus/Sistemas-Embarcados/assets/96553038/9258b4d2-46c0-40d7-80bc-7c0f31d4682a)
