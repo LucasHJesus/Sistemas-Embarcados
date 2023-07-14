@@ -1,0 +1,5 @@
+app.c:13:9:compareValue	3
+app.c:25:7:calculateEnergy	2
+app.c:38:7:convertToAmpere	1
+app.c:44:6:setup	1
+app.c:50:6:loop	4

@@ -1,0 +1,16 @@
+(version 1)
+(rule "min_MC clearance"
+   (constraint clearance (min 6mil))
+   (condition "A.insideCourtyard('MIcrocontroler1')"))
+
+(version 1)
+(rule "min_OA clearance"
+   (constraint clearance (min 6mil))
+   (condition "A.insideCourtyard('IC_OA1')"))
+
+(version 1)
+(rule "min_SD clearance"
+   (constraint clearance (min 6mil))
+   (condition "A.insideCourtyard('MicroSD1')"))
+
+

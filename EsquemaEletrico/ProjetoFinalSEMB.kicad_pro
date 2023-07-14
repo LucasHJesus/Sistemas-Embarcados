@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 2.75,
+          "width": 3.05
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -48,13 +48,19 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "ignore",
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -75,7 +81,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -165,8 +171,21 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.508
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -399,7 +418,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.2032,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -409,9 +428,9 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.254,
+        "via_diameter": 0.6096,
+        "via_drill": 0.3048,
         "wire_width": 6
       }
     ],

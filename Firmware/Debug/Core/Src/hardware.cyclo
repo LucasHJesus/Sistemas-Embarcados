@@ -1,0 +1,10 @@
+hardware.c:16:6:hw_sleep	1
+hardware.c:24:6:hw_adcChannelConfig	2
+hardware.c:41:9:hw_getAnalogValue	1
+hardware.c:59:6:hw_rotate	1
+hardware.c:74:6:hw_moveServo	3
+hardware.c:90:6:hw_servoMoveToZero	1
+hardware.c:100:6:hw_displayInit	1
+hardware.c:123:6:hw_displayShow	1
+hardware.c:138:6:hw_sdInit	1
+hardware.c:146:6:hw_sdStore	2

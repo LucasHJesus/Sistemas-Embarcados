@@ -59,9 +59,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SDIO_DET_B_Pin GPIO_PIN_0
-#define SDIO_DET_B_GPIO_Port GPIOA
-#define SDIO_DET_B_EXTI_IRQn EXTI0_IRQn
 #define LRD1_MEASURE_Pin GPIO_PIN_1
 #define LRD1_MEASURE_GPIO_Port GPIOA
 #define LRD2_MEASURE_Pin GPIO_PIN_2

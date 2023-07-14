@@ -1,0 +1,10 @@
+../Core/Src/hardware.c:16:6:hw_sleep	8	static,ignoring_inline_asm
+../Core/Src/hardware.c:24:6:hw_adcChannelConfig	32	static
+../Core/Src/hardware.c:41:9:hw_getAnalogValue	32	static
+../Core/Src/hardware.c:59:6:hw_rotate	40	static
+../Core/Src/hardware.c:74:6:hw_moveServo	16	static
+../Core/Src/hardware.c:90:6:hw_servoMoveToZero	16	static
+../Core/Src/hardware.c:100:6:hw_displayInit	40	static
+../Core/Src/hardware.c:123:6:hw_displayShow	32	static
+../Core/Src/hardware.c:138:6:hw_sdInit	568	static
+../Core/Src/hardware.c:146:6:hw_sdStore	1168	static

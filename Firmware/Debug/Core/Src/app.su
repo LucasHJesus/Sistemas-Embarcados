@@ -1,0 +1,5 @@
+../Core/Src/app.c:13:9:compareValue	16	static
+../Core/Src/app.c:25:7:calculateEnergy	32	static
+../Core/Src/app.c:38:7:convertToAmpere	16	static
+../Core/Src/app.c:44:6:setup	8	static
+../Core/Src/app.c:50:6:loop	24	static

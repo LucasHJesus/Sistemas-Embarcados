@@ -9,7 +9,12 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Middlewares/Third_Party/FatFs/src/option/subdir.mk
+-include Middlewares/Third_Party/FatFs/src/subdir.mk
+-include FATFS/Target/subdir.mk
+-include FATFS/App/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
+-include Drivers/OLED/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
@@ -60,8 +65,8 @@ all: main-build
 main-build: ProjetoFinalSEMB.elf secondary-outputs
 
 # Tool invocations
-ProjetoFinalSEMB.elf ProjetoFinalSEMB.map: $(OBJS) $(USER_OBJS) C:\Users\Bruno\ Pavan\STM32CubeIDE\workspace_1.12.1\ProjetoFinalSEMB\STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ProjetoFinalSEMB.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Bruno Pavan\STM32CubeIDE\workspace_1.12.1\ProjetoFinalSEMB\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ProjetoFinalSEMB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ProjetoFinalSEMB.elf ProjetoFinalSEMB.map: $(OBJS) $(USER_OBJS) C:\Users\lukas\prog\SEMB\projetoFinal\Sistemas-Embarcados\Firmware\STM32F411CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ProjetoFinalSEMB.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\lukas\prog\SEMB\projetoFinal\Sistemas-Embarcados\Firmware\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ProjetoFinalSEMB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
